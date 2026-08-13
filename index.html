@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dra. Joelma Marinho | Programa Nutrir - Emagrecimento Saudável & Descomplicado</title>
     <meta name="description" content="Conheça o Programa Nutrir da Dra. Joelma Marinho. Quase 30 anos de experiência clínica e autora do livro Descomplicando a Nutrição. Agende seu acompanhamento.">
+    <meta name="theme-color" content="#FAF8F5">
     
     <!-- Speed Optimization: Resource Preconnects -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     
-    <!-- Google Fonts -->
+    <!-- Non-Render-Blocking Google Fonts Loading -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..800;1,7..72,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..800;1,7..72,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..800;1,7..72,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..800;1,7..72,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+    </noscript>
     
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Non-Render-Blocking FontAwesome Icons Loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,19 +40,19 @@
                 </div>
             </div>
             
-            <nav class="nav-menu">
+            <nav class="nav-menu" aria-label="Navegação Principal">
                 <a href="#programa-nutrir" class="nav-link">Programa Nutrir</a>
                 <a href="#sobre" class="nav-link">Sobre a Nutri</a>
                 <a href="#servicos" class="nav-link">O Acompanhamento</a>
                 <a href="#faq" class="nav-link">Dúvidas</a>
             </nav>
 
-            <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Programa%20Nutrir." target="_blank" class="nav-btn-cta">
+            <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Programa%20Nutrir." target="_blank" rel="noopener noreferrer" class="nav-btn-cta" aria-label="Agendar Consulta no WhatsApp">
                 Agendar Consulta
             </a>
 
             <!-- Mobile Menu Hamburger Button -->
-            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Abrir Menu">
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Abrir ou fechar menu de navegação">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
@@ -56,7 +63,7 @@
             <a href="#sobre" class="mobile-nav-link">Sobre a Nutri</a>
             <a href="#servicos" class="mobile-nav-link">O Acompanhamento</a>
             <a href="#faq" class="mobile-nav-link">Dúvidas</a>
-            <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20agendar%20minha%20consulta." target="_blank" class="btn-cta btn-mobile-dropdown">AGENDAR CONSULTA</a>
+            <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20agendar%20minha%20consulta." target="_blank" rel="noopener noreferrer" class="btn-cta btn-mobile-dropdown" aria-label="Agendar Consulta no WhatsApp">AGENDAR CONSULTA</a>
         </div>
     </header>
 
@@ -82,7 +89,7 @@
                 </p>
 
                 <div class="cta-wrapper">
-                    <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20agendar%20minha%20participa%C3%A7%C3%A3o%20no%20Programa%20Nutrir." target="_blank" class="btn-cta">
+                    <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20agendar%20minha%20participa%C3%A7%C3%A3o%20no%20Programa%20Nutrir." target="_blank" rel="noopener noreferrer" class="btn-cta" aria-label="Agendar consulta agora pelo WhatsApp">
                         <span class="btn-text">AGENDAR CONSULTA AGORA</span>
                         <i class="fa-solid fa-arrow-right btn-arrow"></i>
                     </a>
@@ -91,10 +98,13 @@
 
             </div>
 
-            <!-- Right Hero Visual -->
+            <!-- Right Hero Visual with Responsive Picture Element for Fast Mobile LCP -->
             <div class="hero-visual">
                 <div class="photo-wrapper">
-                    <img src="assets/joelma-canva-hero.webp" width="580" height="680" fetchpriority="high" loading="eager" decoding="async" alt="Dra. Joelma Marinho Nutricionista" class="joelma-img canva-hero-img" id="joelmaPhoto">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="assets/joelma-canva-hero-mobile.webp" type="image/webp" width="380" height="475">
+                        <img src="assets/joelma-canva-hero.webp" width="580" height="680" fetchpriority="high" loading="eager" decoding="async" alt="Dra. Joelma Marinho Nutricionista" class="joelma-img canva-hero-img" id="joelmaPhoto">
+                    </picture>
                 </div>
             </div>
 
@@ -102,7 +112,7 @@
     </section>
 
     <!-- SECTION 2: AUTHORITY & TRUST BANNER (INFINITE AUTOMATIC SLIDER FOR PC & MOBILE) -->
-    <section class="authority-bar">
+    <section class="authority-bar" aria-label="Diferenciais da Dra. Joelma Marinho">
         <div class="marquee-track-wrapper">
             <div class="marquee-track">
                 
@@ -271,7 +281,7 @@
                     Com quase três décadas de atuação, a Dra. Joelma Marinho construiu uma carreira sólida na nutrição clínica e esportiva (tendo atuado inclusive na alimentação de atletas em grandes eventos como os JUBs). É autora do livro <em>Descomplicando a Nutrição</em> e desenvolveu o <strong>Programa Nutrir</strong> com o propósito de levar emagrecimento sem sofrimento para milhares de pessoas.
                 </p>
 
-                <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20agendar%20minha%20consulta." target="_blank" class="btn-cta btn-about">
+                <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20agendar%20minha%20consulta." target="_blank" rel="noopener noreferrer" class="btn-cta btn-about" aria-label="Quero agendar minha consulta no WhatsApp">
                     QUERO AGENDAR MINHA CONSULTA
                 </a>
             </div>
@@ -338,7 +348,7 @@
 
             <div class="faq-accordion">
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>O Programa Nutrir funciona para quem faz atendimento online?</span>
                         <i class="fa-solid fa-chevron-down faq-icon"></i>
                     </button>
@@ -348,7 +358,7 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>Vou precisar parar de comer pão, doces ou arroz?</span>
                         <i class="fa-solid fa-chevron-down faq-icon"></i>
                     </button>
@@ -358,7 +368,7 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>Como faço para agendar minha consulta do Programa Nutrir?</span>
                         <i class="fa-solid fa-chevron-down faq-icon"></i>
                     </button>
@@ -368,7 +378,7 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false">
                         <span>É fornecido recibo para reembolso de plano de saúde?</span>
                         <i class="fa-solid fa-chevron-down faq-icon"></i>
                     </button>
@@ -389,7 +399,7 @@
                     <h2>Chega de adiar a sua saúde. Comece sua transformação no Programa Nutrir hoje.</h2>
                     <p>Agende sua consulta e receba um acompanhamento respaldado por quase 30 anos de experiência clínica.</p>
                     
-                    <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Quero%20agendar%20minha%20consulta." target="_blank" class="btn-cta btn-lg">
+                    <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Quero%20agendar%20minha%20consulta." target="_blank" rel="noopener noreferrer" class="btn-cta btn-lg" aria-label="Agendar consulta agora no WhatsApp">
                         AGENDAR CONSULTA AGORA
                     </a>
                 </div>
@@ -425,8 +435,8 @@
             <div class="footer-col">
                 <h4>Contato & Redes</h4>
                 <ul>
-                    <li><a href="https://wa.me/5582999257916" target="_blank" class="footer-link"><i class="fa-brands fa-whatsapp footer-icon"></i> WhatsApp</a></li>
-                    <li><a href="https://www.instagram.com/joelmamarinhonutricionista" target="_blank" class="footer-link"><i class="fa-brands fa-instagram footer-icon"></i> Instagram</a></li>
+                    <li><a href="https://wa.me/5582999257916" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Conversar no WhatsApp com Dra. Joelma"><i class="fa-brands fa-whatsapp footer-icon"></i> WhatsApp</a></li>
+                    <li><a href="https://www.instagram.com/joelmamarinhonutricionista" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Ver perfil no Instagram da Dra. Joelma"><i class="fa-brands fa-instagram footer-icon"></i> Instagram</a></li>
                     <li><span class="footer-info-text"><i class="fa-solid fa-location-dot footer-icon"></i> Maceió - AL | Atendimento Online</span></li>
                 </ul>
             </div>
