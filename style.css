@@ -109,6 +109,16 @@ body {
     font-weight: 500;
 }
 
+/* Speed Optimization: Content Visibility for off-screen sections */
+.problems-section,
+.services-section,
+.faq-section,
+.final-cta-section,
+.site-footer {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 600px;
+}
+
 /* ==========================================================================
    NAVBAR
    ========================================================================== */
@@ -537,7 +547,7 @@ body {
 }
 
 /* ==========================================================================
-   SECTION 4: PROGRAMA NUTRIR - SOFT ALPHA FADE CUTOUT & UNIFIED SECTION GRADIENT
+   SECTION 4: PROGRAMA NUTRIR - SOFT ALPHA FADE CUTOUT & WEBP GRAIN TEXTURE
    ========================================================================== */
 .method-reference-section {
     padding-top: 72px;
@@ -552,7 +562,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('assets/grain-texture.png');
+    background-image: url('assets/grain-texture.webp');
     background-repeat: repeat;
     opacity: 0.85;
     pointer-events: none;
@@ -669,13 +679,13 @@ body {
 }
 
 /* ==========================================================================
-   SECTION 5: ABOUT SECTION (PERFECTLY BALANCED 50/50 EXPANDED TEXT CONTAINER & SINGLE FULL BG)
+   SECTION 5: ABOUT SECTION (WEBP OPTIMIZED FULL BG)
    ========================================================================== */
 .about-section {
     position: relative;
     padding: 110px 0;
     background-color: #120B06;
-    background-image: url('assets/joelma-about-balancedbg.jpg');
+    background-image: url('assets/joelma-about-balancedbg.webp');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
