@@ -47,7 +47,7 @@
                 <a href="#faq" class="nav-link">Dúvidas</a>
             </nav>
 
-            <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Programa%20Nutrir." target="_blank" rel="noopener noreferrer" class="nav-btn-cta" aria-label="Agendar Consulta no WhatsApp">
+            <a href="#agendar" class="nav-btn-cta open-modal-trigger" aria-label="Abrir formulário de agendamento">
                 Agendar Consulta
             </a>
 
@@ -63,7 +63,7 @@
             <a href="#sobre" class="mobile-nav-link">Sobre a Nutri</a>
             <a href="#servicos" class="mobile-nav-link">O Acompanhamento</a>
             <a href="#faq" class="mobile-nav-link">Dúvidas</a>
-            <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20agendar%20minha%20consulta." target="_blank" rel="noopener noreferrer" class="btn-cta btn-mobile-dropdown" aria-label="Agendar Consulta no WhatsApp">AGENDAR CONSULTA</a>
+            <a href="#agendar" class="btn-cta btn-mobile-dropdown open-modal-trigger" aria-label="Abrir formulário de agendamento">AGENDAR CONSULTA</a>
         </div>
     </header>
 
@@ -89,7 +89,7 @@
                 </p>
 
                 <div class="cta-wrapper">
-                    <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20agendar%20minha%20participa%C3%A7%C3%A3o%20no%20Programa%20Nutrir." target="_blank" rel="noopener noreferrer" class="btn-cta" aria-label="Agendar consulta agora pelo WhatsApp">
+                    <a href="#agendar" class="btn-cta open-modal-trigger" aria-label="Abrir formulário de agendamento">
                         <span class="btn-text">AGENDAR CONSULTA AGORA</span>
                         <i class="fa-solid fa-arrow-right btn-arrow"></i>
                     </a>
@@ -98,7 +98,7 @@
 
             </div>
 
-            <!-- Right Hero Visual with Responsive Picture Element for Fast Mobile LCP -->
+            <!-- Right Hero Visual -->
             <div class="hero-visual">
                 <div class="photo-wrapper">
                     <picture>
@@ -281,7 +281,7 @@
                     Com quase três décadas de atuação, a Dra. Joelma Marinho construiu uma carreira sólida na nutrição clínica e esportiva (tendo atuado inclusive na alimentação de atletas em grandes eventos como os JUBs). É autora do livro <em>Descomplicando a Nutrição</em> e desenvolveu o <strong>Programa Nutrir</strong> com o propósito de levar emagrecimento sem sofrimento para milhares de pessoas.
                 </p>
 
-                <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Gostaria%20de%20agendar%20minha%20consulta." target="_blank" rel="noopener noreferrer" class="btn-cta btn-about" aria-label="Quero agendar minha consulta no WhatsApp">
+                <a href="#agendar" class="btn-cta btn-about open-modal-trigger" aria-label="Quero agendar minha consulta no formulário">
                     QUERO AGENDAR MINHA CONSULTA
                 </a>
             </div>
@@ -399,7 +399,7 @@
                     <h2>Chega de adiar a sua saúde. Comece sua transformação no Programa Nutrir hoje.</h2>
                     <p>Agende sua consulta e receba um acompanhamento respaldado por quase 30 anos de experiência clínica.</p>
                     
-                    <a href="https://wa.me/5582999257916?text=Ol%C3%A1%20Dra.%20Joelma!%20Quero%20agendar%20minha%20consulta." target="_blank" rel="noopener noreferrer" class="btn-cta btn-lg" aria-label="Agendar consulta agora no WhatsApp">
+                    <a href="#agendar" class="btn-cta btn-lg open-modal-trigger" aria-label="Agendar consulta agora no formulário">
                         AGENDAR CONSULTA AGORA
                     </a>
                 </div>
@@ -435,7 +435,7 @@
             <div class="footer-col">
                 <h4>Contato & Redes</h4>
                 <ul>
-                    <li><a href="https://wa.me/5582999257916" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Conversar no WhatsApp com Dra. Joelma"><i class="fa-brands fa-whatsapp footer-icon"></i> WhatsApp</a></li>
+                    <li><a href="#agendar" class="footer-link open-modal-trigger" aria-label="Abrir formulário de contato WhatsApp"><i class="fa-brands fa-whatsapp footer-icon"></i> WhatsApp</a></li>
                     <li><a href="https://www.instagram.com/joelmamarinhonutricionista" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Ver perfil no Instagram da Dra. Joelma"><i class="fa-brands fa-instagram footer-icon"></i> Instagram</a></li>
                     <li><span class="footer-info-text"><i class="fa-solid fa-location-dot footer-icon"></i> Maceió - AL | Atendimento Online</span></li>
                 </ul>
@@ -448,6 +448,45 @@
             </div>
         </div>
     </footer>
+
+    <!-- MODAL POP-UP LEAD CAPTURE FORM -->
+    <div class="modal-overlay" id="leadModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-card">
+            <button class="modal-close" id="modalClose" aria-label="Fechar formulário">&times;</button>
+            
+            <div class="modal-header">
+                <div class="modal-badge"><i class="fa-solid fa-calendar-check"></i> AGENDAMENTO DE CONSULTA</div>
+                <h2 class="modal-title" id="modalTitle">Iniciar Acompanhamento</h2>
+                <p class="modal-subtitle">Preencha seus dados abaixo para iniciar sua conversa com a equipe da Dra. Joelma Marinho.</p>
+            </div>
+
+            <form id="leadForm" class="modal-form" novalidate>
+                <div class="form-group">
+                    <label for="leadName" class="form-label"><i class="fa-solid fa-user"></i> Nome Completo</label>
+                    <input type="text" id="leadName" class="form-input" placeholder="Digite seu nome completo" required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="leadPhone" class="form-label"><i class="fa-brands fa-whatsapp"></i> WhatsApp (com DDD)</label>
+                    <input type="tel" id="leadPhone" class="form-input" placeholder="(82) 99999-9999" required autocomplete="tel">
+                </div>
+
+                <div class="form-group">
+                    <label for="leadEmail" class="form-label"><i class="fa-solid fa-envelope"></i> E-mail</label>
+                    <input type="email" id="leadEmail" class="form-input" placeholder="seuemail@exemplo.com" required autocomplete="email">
+                </div>
+
+                <button type="submit" class="btn-cta btn-modal-submit" id="btnSubmitForm">
+                    <span>IR PARA O WHATSAPP DA DOUTORA</span>
+                    <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </button>
+
+                <p class="modal-footer-note">
+                    <i class="fa-solid fa-lock"></i> Seus dados estão 100% seguros e confidenciais.
+                </p>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js" defer></script>
 </body>
